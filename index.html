@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SLOG | Kurumsal Çözümler</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img
+          src="https://via.placeholder.com/120x40?text=SLOG"
+          alt="SLOG Logo"
+        />
+      </div>
+      <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#" onclick="#showServices()">Hizmetler</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+      </nav>
+    </header>
+
+    <section id="services" class="services">
+      <h2>Hizmetlerimiz</h2>
+      <p class="services-desc">
+        Küçük ve orta ölçekli lojistik firmaları için geliştirilen, pratik,
+        anlaşılır ve ölçeklenebilir lojistik yazılım çözümleri sunuyoruz.
+      </p>
+
+      <div class="service-cards">
+        <div class="card">
+          <h3>🚚 Başlangıç Paketi</h3>
+          <p class="vehicle">1 – 5 Araç</p>
+          <ul>
+            <li>Araç & sürücü takibi</li>
+            <li>Sefer kayıtları</li>
+            <li>Basit gelir-gider takibi</li>
+            <li>Aylık rapor</li>
+            <li>E-posta destek</li>
+          </ul>
+        </div>
+
+        <div class="card featured">
+          <h3>🚛 Profesyonel Paket</h3>
+          <p class="vehicle">6 – 15 Araç</p>
+          <ul>
+            <li>Tüm Başlangıç özellikleri</li>
+            <li>Detaylı maliyet analizi</li>
+            <li>Fatura & cari takibi</li>
+            <li>Haftalık raporlar</li>
+            <li>WhatsApp destek</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🚛🚛 Kurumsal Paket</h3>
+          <p class="vehicle">16 – 30 Araç</p>
+          <ul>
+            <li>Tüm Profesyonel özellikler</li>
+            <li>Özel raporlama</li>
+            <li>Personel performans takibi</li>
+            <li>Öncelikli destek</li>
+            <li>Özel entegrasyonlar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Lojistik Süreçleriniz İçin<br />Akıllı Yazılım Çözümleri</h1>
+      <p>
+        SLOG, küçük ve orta ölçekli lojistik firmalarına özel yazılım ve süreç
+        danışmanlığı sunar.
+      </p>
+      <a href="#" class="btn">Teklif Al</a>
+      <a href="contact.html">İletişim</a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="service-box">
+        <h3>Yazılım Desteği</h3>
+        <p>Lojistik operasyonlarınıza özel yazılım çözümleri.</p>
+      </div>
+      <div class="service-box">
+        <h3>Süreç Optimizasyonu</h3>
+        <p>Verimliliği artıran analiz ve iyileştirme.</p>
+      </div>
+      <div class="service-box">
+        <h3>Danışmanlık</h3>
+        <p>Deneyime dayalı stratejik yönlendirme.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 SLOG | Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+      function showServices() {
+        const services = document.getElementById("services");
+
+        services.classList.add("show");
+        services.classList.remove("hidden");
+
+        services.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
